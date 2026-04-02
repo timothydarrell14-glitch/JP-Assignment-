@@ -53,23 +53,18 @@ let student = {
     candidateNum: 1109,
 }
 
-let grade = 90
-function studentGrade(){
-    if(grade < 90)
-    console.log(grade, "A")
-}
-if(grade < 80){
-    console.log(grade,"B")
-}
-else if(grade < 70){
-    console.log(grade, "C")
-}
-else if(grade < 60){
-    console.log(grade, "D")
-}
-else if(grade < 50){
-    console.log(grade, "F")
-}
+let grade = 85
+
 student.studentGrade = grade
 
+function studentGrade(grade) {
+    if(grade < 90)
+    return ("A")
+
+}
+studentGrade()
+
 console.log(student)
+
+
+
