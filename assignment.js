@@ -20,9 +20,10 @@ else{
 }
 
 // LEVEL:2(a) 
+/* let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-/* for(let x = 1){
-    console.log(x)
+for(let i = num; i < num.length; num.reduce ++){
+    console.log(num)
 } */
 
 // LEVEL:2 (b)
@@ -50,23 +51,25 @@ let student = {
     lastName: "Darrell",
     age: 18,
     candidateNum: 1109,
-    grade : 85
 }
-let grade = 85
 
-function addGrade(){
+let grade = 90
+function studentGrade(){
     if(grade < 90)
-    console.log(student, "A")
+    console.log(grade, "A")
 }
-   if(grade < 80){
-    console.log(student,"B")
+if(grade < 80){
+    console.log(grade,"B")
 }
 else if(grade < 70){
-    console.log(student, "C")
+    console.log(grade, "C")
 }
 else if(grade < 60){
-    console.log(student, "D")
+    console.log(grade, "D")
 }
 else if(grade < 50){
-    console.log(student, "F")
+    console.log(grade, "F")
 }
+student.studentGrade = grade
+
+console.log(student)
