@@ -70,5 +70,3 @@ else if(grade < 60){
 else if(grade < 50){
     console.log(student, "F")
 }
-
-addGrade
