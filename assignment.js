@@ -20,9 +20,8 @@ else{
 }
 
 // LEVEL:2(a) 
-let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for(let i = num; i < num.length; num.reduce ++){
+for(let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; ){
     console.log(num)
 }
 
@@ -33,17 +32,15 @@ let fruits = ["Kiwi", "Banana", "Orange", "Pear", "Pineapple"]
 let typeOfFruit = [...fruits]
 console.log(typeOfFruit)
 
-fruits[1] = "Bananas" 
+fruits[1] = "" 
 console.log(fruits)
 
 // Level: 3(a)---------------
 
 let name = "Guest"
+const greetGuest= (name) => console.log("Hello!", name);
+greetGuest(name)
 
-function greet(name){
-    console.log("Welcome!", name)
-}
-greet(Guest)
 
 // Level: 3(b)-------------------------
 
@@ -80,7 +77,7 @@ class student {
 
 }
 
-// Level: 4(a)----------------------
+// Level: 4(a)---------------------- 
 
 /* const delayedTask = new Promise((resolve, reject) => {
     setTimeout(() => {
